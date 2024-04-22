@@ -1,0 +1,63 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+body.bg-img {
+  background: url('your-image-path.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Add transparency to the container */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: $primary-color;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group-append .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input-group-append .btn-primary {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+}
+
+.btn-primary:hover {
+  background-color: darken($primary-color, 15%);
+  border-color: darken($primary-color, 15%);
+}
+
+.list-group-item {
+  border-color: #dee2e6;
+}
+
+.list-group-item:last-child {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: $secondary-color;
+}
